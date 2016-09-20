@@ -1,0 +1,459 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  /*background-color: #61122f;*/
+  font-family: 'Oxygen', sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #F66733;
+  border-radius: 0;
+  border: 0;
+  /*margin-bottom=0;*/
+}
+
+#header-nav2 {
+  background-color:#522d80;
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 5px;
+  /*margin-bottom=0;*/
+}
+
+#logo-img {
+  background: url('../images/logo.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar{
+margin-bottom: 0;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: #557c3e;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+/*.slide1 {
+    background-image: url(../images/jumbotron_768.jpg);
+}
+.slide2 {
+    background-image: url(../images/slide2_768.jpg);
+}
+.slide3 {
+    background-image: url(../images/slide3_768.jpg);
+}*/
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('../images/jumbotron_1200.jpg') no-repeat;
+    height: 675px;
+  }
+  
+  .slide1 {
+    background: url(../images/jumbotron_1200.jpg) no-repeat;
+    height: 675px;
+}
+ .slide2 {
+    background: url(../images/slide2_1200.jpg) no-repeat;
+    height: 675px;
+}
+
+ .slide3 {
+    background: url(../images/slide3_1200.jpg) no-repeat;
+    height: 675px;
+}
+
+
+
+
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('../images/logo-medium.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+  }
+  .slide1 {
+    background: url('../images/jumbotron_992.jpg') no-repeat;
+    height: 558px;
+}
+ .slide2 {
+    background: url('../images/slide2_992.jpg') no-repeat;
+    height: 558px;
+}
+
+ .slide3 {
+    background: url('../images/slide3_992.jpg') no-repeat;
+    height: 558px;
+}
+
+
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+  }
+  .slide1 {
+    background: url('../images/jumbotron_768.jpg') no-repeat;
+    height: 432px;
+}
+ .slide2 {
+    background: url('../images/slide2_768.jpg') no-repeat;
+    height: 432px;
+}
+
+ .slide3 {
+    background: url('../images/slide3_768.jpg') no-repeat;
+    height: 432px;
+}
+  /* End Home Page */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+
+  #header-nav2 {
+  background-color: #FFFFFF;
+  /*border-radius: 0;
+  border: 0;*/
+  /*margin-bottom=0;*/
+}
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav{
+    background-color:#522d80;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+    
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  #xs-deliver {
+    margin-top: 5px;
+    font-size: .7em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+   #myCarousel {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+/*.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}*/
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #menu-tile, #specials-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+}
+
+
+/* FOOTER */
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #F66733;
+  border-top: 0;
+
+}
+.panel-footer a {
+    color: #70726F;
+    font-size: 30px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.panel-footer a:first-child {
+    border-left: 1px solid #70726F;
+}
+
+.panel-footer a:hover {
+    color: white;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+
+#CV-tile, #Git-tile, #Android-tile {
+  height: 250px;
+  width: 100%;
+  margin-top:15px;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+#CV-tile:hover, #Git-tile:hover, #Android-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+#CV-tile {
+  background: url('../images/menu-tile.jpg') no-repeat;
+  background-position: center;
+}
+#Git-tile {
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#CV-tile span, #Git-tile span, #Android-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.table-responsive{
+	margin-top:15px;
+	
+}
+
+/* info table describes */
+.infoTable {
+	margin:0px;padding:0px;
+	
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	/*border:1px solid #000000;*/
+	
+	-moz-border-radius-bottomleft:11px;
+	-webkit-border-bottom-left-radius:11px;
+	border-bottom-left-radius:11px;
+	
+	-moz-border-radius-bottomright:11px;
+	-webkit-border-bottom-right-radius:11px;
+	border-bottom-right-radius:11px;
+	
+	-moz-border-radius-topright:11px;
+	-webkit-border-top-right-radius:11px;
+	border-top-right-radius:11px;
+	
+	-moz-border-radius-topleft:11px;
+	-webkit-border-top-left-radius:11px;
+	border-top-left-radius:11px;
+}
+
+
+
+.infoTable table{
+    border-collapse: collapse;
+        border-spacing: 0;
+		
+		
+		
+		
+	width:100%;
+	height:100%;
+	margin:0px;padding:0px;
+	
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+.infoTable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:11px;
+	-webkit-border-bottom-right-radius:11px;
+	border-bottom-right-radius:11px;
+}
+.infoTable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:11px;
+	-webkit-border-top-left-radius:11px;
+	border-top-left-radius:11px;
+}
+.infoTable table tr:first-child td:last-child {
+	-moz-border-radius-topright:11px;
+	-webkit-border-top-right-radius:11px;
+	border-top-right-radius:11px;
+}.infoTable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:11px;
+	-webkit-border-bottom-left-radius:11px;
+	border-bottom-left-radius:11px;
+}.infoTable tr:hover td{
+	        background-color: #DFEBF1;
+
+}
+.infoTable tr:nth-child(odd){ background-color:#F66733; }
+.infoTable tr:nth-child(even)    { background-color:#522d80; }.infoTable td{
+	vertical-align:middle;
+	
+	
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:11px;
+	font-size:15px;
+	font-family:Times New Roman;
+	font-weight:normal;
+	color:#000000;
+}.infoTable tr:last-child td{
+	border-width:0px 1px 0px 0px;
+}.infoTable tr td:last-child{
+	border-width:0px 0px 1px 0px;
+}.infoTable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.infoTable tr:first-child td{
+		background:-o-linear-gradient(bottom, #56aaff 5%, #001fbc 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56aaff), color-stop(1, #001fbc) );
+	background:-moz-linear-gradient( center top, #56aaff 5%, #001fbc 100% );
+
+	background-color:#56aaff;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:20px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.infoTable tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #56aaff 5%, #001fbc 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #56aaff), color-stop(1, #001fbc) );
+	background:-moz-linear-gradient( center top, #56aaff 5%, #001fbc 100% );
+
+	background-color:#56aaff;
+}
+.infoTable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.infoTable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+
+/* END HOME PAGE */
+
+
